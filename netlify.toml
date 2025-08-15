@@ -1,7 +1,7 @@
 [build]
-  base = ""  # Root of your repo
-  publish = "frontend"  # Adjust if your frontend folder is named differently
-  command = "npm run build"  # Or your actual frontend build command
+  base = "frontend"
+  publish = "build"
+  command = "npm run build"
 
 [functions]
   directory = "netlify/functions"
@@ -10,3 +10,4 @@
   from = "/*"
   to = "/index.html"
   status = 200
+  
